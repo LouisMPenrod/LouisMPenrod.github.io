@@ -3,18 +3,27 @@ project:
   output-dir: docs
 
 website:
-  title: "LouisMPenrod.github.io"
+  title: "Louis M. Penrod, Ph.D."
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
-
+      - text: Home
+        href: index.qmd
+      - text: Bio
+        href: bio.qmd
+      - text: Projects
+        href: projects.qmd
+      - text: Resources
+        href: resources.qmd
+    right: 
+      - icon: github
+        href: https://github.com/LouisMPenrod 
 format:
   html:
-    theme: cosmo
+    theme: flatly
     css: styles.css
     toc: true
+    code-link: true
+    code-tools: true
 
 
 

@@ -1,16 +1,33 @@
 ---
-title: "LouisMPenrod.github.io"
+title: "Louis M. Penrod, Ph.D."
+image: "./images/2022-08_Headshot_staffBio.jpg"
+about: 
+  template: broadside
+  image-width: 15em
+  links: 
+    - text: Email
+      icon: envelope
+      href: mailto:louismpenrod@gmail.com
+    - text: Github
+      icon: github
+      href: https://github.com/LouisMPenrod
+toc: false
 ---
 
-This is a Quarto website.
+I'm a data manager/programmer at Simulations Plus in the Clinical Pharmacology and Pharmacometrics Solutions business unit. In this role, I leverage my familiarity with R to process data, create figures, and generate dataset documentation. I enjoy developing tools and solutions in R that not only optimize workflows but also contribute to advancing data-driven approaches.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+## **Education**
 
-```{r}
-1 + 1   
-```
+**Florida Institute of Technology** | Melbourne, FL  
 
-```{r}
-#test3 for push
-```
+Ph.D. in Biological Sciences | August 2016 - May 2022    
+B.S. in Marine Biology | August 2012 - May 2016  
+B.S. in Aquaculture | August 2012 - May 2016  
 
+## **Experience**
+
+**Simulations Plus - Clinical Pharmacology and Pharmacometrics Solutions** | Data Manager | July 2022 - present
+
+**Florida Institute of Technology** | Teaching Assistant and Aqualab Manager | August 2024 - December 2021
+
+[Learn more about my career path in my bio!](bio.qmd)

@@ -1,0 +1,150 @@
+---
+title: "Biography"
+---
+
+# Education
+
+:::: {.columns}
+::: {.column width="75%"}
+**Florida Institute of Technology, Dept. Ocean Engineering and Marine Sciences**  
+*Ph.D. in Biological Sciences, GPA: 3.94*
+:::
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="20%" .rjustify}
+**Melbourne, FL**  
+May 2022
+:::
+::::
+
+* Generated a 200+ page dissertation investigating *The Form and Function of Cranial Spines in Fishes.* The dissertation required that I:  
+
+    -  Utilized R to collect, clean, and combine millions of data points from various sources.
+    -  Created a Shiny app for data collection to maintain consistent data formatting upon data entry. 
+    -  Generated data and extracted features important to the function of cranial spines.
+    -  Performed statistical analyses to directly test the function of spines. 
+    -  Developed and executed a multi-factor experiment to directly test the function of spines.
+    -  Developed predictive models (logistic and machine learning methods) to identify the relationship between cranial spine expression and several environmental variables.
+    -  Directed and managed undergraduate students assisting on the project.
+
+<br>
+
+:::: {.columns}
+::: {.column width="75%"}
+**Florida Institute of Technology, Dept. Biological Science**  
+*BS in Marine Biology & BS in Aquaculture, GPA: 3.5*
+:::
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="20%" .rjustify}
+**Melbourne, FL**  
+May 2016
+:::
+::::
+
+* Graduated Cum Laude
+
+# Work Experience
+
+:::: {.columns}
+::: {.column width="75%"}
+**Simulations-Plus: CPP-Services Business Unit, Data Management Team**  
+*Data Programmer*
+:::
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="20%" .rjustify}
+**Remote**  
+July 2022 - Present
+:::
+::::
+
+* Responsibilities include:
+
+    -  **Data Receipt:** Receive and process data into standardized structures, ensuring clear communication of data received internally and with clients.
+    -  Graphing: Utilize R to generate exploratory and final tables, figures, and listings. Maintain and enhance the code base for consistent graphical outputs. Provide guidance to team members on generating visuals and uphold graphical style standards. Maintain documentation of internal guidelines and graphing code.
+    -  **Data Definition Documentation:** Develop comprehensive documentation for analysis-ready datasets and model input files. Ensure accuracy and standardization of documentation, along with compliance with regulatory guidelines.
+    -  **Committee Involvement:** Actively participate in the 'R Standards and Best Practices' committee, the 'Define Committee', and a Research & Development team on 'Best Practices for Client Presentations'.
+    -  **Internal Tools Development:** Created a tool to automate the generation of RMarkdown files for client presentations and deliverables. Redesigned the define process to streamline the define construction and automate checks for regulatory submission guidelines. Developed a tool to map files and programs to client directory systems, facilitating seamless integration and compliance with client standards while maintaining our standard directory structure.
+
+<br>
+
+:::: {.columns}
+::: {.column width="65%"}
+**Florida Institute of Technology**  
+*Student Instructor*
+:::
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="30%" .rjustify}
+**Melbourne, FL**  
+June 2020 - December 2021
+:::
+::::
+
+* Developed and instructed the Applied Statistical Analysis summer course for the Pre-College STEM Pathway Program for 30+ prospective or incoming students. Through daily virtual lectures and activities, this 36-hour course provided an introduction into data management, data visualization, and univariate statistical analyses in R which can be applied in various STEM majors.
+* Developed and instructed the General Ecology (MAR 3410) course for the Fall 2021 semester (20 students). This course involved 40+ hours of lectures and 8 hands-on/coding labs over the course of the semester. 100% of student responses to anonymous course evaluations rated the overall quality of instruction as either "Effective" or "Very Effective" with students providing the comments:
+  - *"Louis is always very patient when answering questions and really tries to make sure students understand what he is teaching."*
+  - *"He explained everything very thoroughly and made lectures dynamic and interesting."*
+
+<br>
+
+:::: {.columns}
+::: {.column width="70%"}
+**Florida Institute of Technology**  
+*Teaching Assistant*
+:::
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="25%" .rjustify}
+**Melbourne, FL**  
+August 2016 - May 2021
+:::
+::::
+
+* Trained 300+ students from various STEM majors how to manage and visualize data, and perform univariate statistical analyses in R. This occurred as part of the laboratory portion of the Biometry course (MAR 2801) which I redesigned and instructed in the Spring semesters of 2017 - 2021. In 2021, over 75% of student responses to anonymous course evaluations rated the overall quality of instruction as either "Effective" or "Very Effective" with students providing the comments:
+    - *"[Louis] really takes the time to make sure everything is very clear and thoroughly explained. He relates absolutely everything to the real world and focuses on application over memorization so it is very obvious how I can or will use this material in the real world since it’s so example based."*
+    - *"Louis is extremely helpful and willing to explain anything. He is also very knowledgeable in the world of R so it was a wonderful experience to be taught by him."*
+* Instructed the laboratory portion of upper-class/graduate level Modeling for Ecology and Biology course (MAR 4517/5517) in the Fall semesters of 2018 - 2020. This position required that I:
+    -  Had a working knowledge of various models using in biology and ecology including linear and logistic models, life-history tables, SIR models, evolution models, Bayesian models, and more.
+    -  Refined code from previous years to account for changes in R and packages.
+    -  Troubleshot errors in the student’s assignment code on-the-spot.
+    -  Guided students in developing their own modeling project.
+    -  Introduced additional lectures on using R Markdown and Shiny applications for modeling.
+* Educated 35+ students on the identification, anatomy, ecology, and behavior of 100+ species during the laboratory portion of the Marine Biology course (MAR 4710) in the Fall semesters of 2016 - 2017. This position required that I prepared for weekly excursions into various marine habitats, had a knowledge basis on the information of all species that may be found and present this knowledge to the students, ensure student safety, and evaluated student’s work.
+
+<br>
+
+:::: {.columns}
+::: {.column width="65%"}
+**Florida Institute of Technology**  
+*Aqualab Manager*
+:::
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="30%" .rjustify}
+**Melbourne, FL**  
+June 2017 - December 2020
+:::
+::::
+
+* Maintained the aqualab facility on Florida Tech’s campus. This involved equipment maintenance (e.g., electrical and plumbing) and coordinated share resource acquisition.  
+* Performed daily care for all organisms in the facility including feedings, water changes, and housing maintenance.
+* Enforced federal and university animal care protocols and personnel training. 
+
+
+# Publications
+
+Tuohy, E., Schärer-Umpierre, M., Penrod, L., & Appeldoorn, R. (2023). Spatial and temporal dynamics of a Nassau grouper fish spawning aggregation located on an isolated seamount in Puerto Rico. [*Aquatic Conservation: Marine and Freshwater Ecosystems, 33(10), 1116-1130*](https://doi.org/10.1002/aqc.3994). 
+
+Tuohy, E., Schärer-Umpierre, M., Penrod, L., and Appeldoorn, R. (2023). Home range, space use, and vertical distribution of Nassau grouper (*Epinephelus striatus*) during non-spawning times in Western Puerto Rico. [*Front. Mar. Sci. 10:1206070*](https://doi.org/10.3389/fmars.2023.1206070)
+
+Penrod, L. M. (2022). The Form and Function of Cranial Spines in Fishes [Doctoral dissertation, Florida Institute of Technology] 
+
+Cramer, M. T., Fidler, R. Y., Penrod, L. M., Carroll, J., & Turingan, R. G. (2020). A spatiotemporal comparison of length-at-age in the coral reef fish *Acanthurus nigrofuscus* between marine reserves and fished reefs. [*PLOS ONE, 15(9), e0239842*](https://doi.org/10.1371/journal.pone.0239842).

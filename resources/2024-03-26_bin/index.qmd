@@ -1,0 +1,28 @@
+---
+title: "Oh the methods you can bin"
+description: "Explore the many ways to bin continuous variables."
+author:
+  - name: Louis M Penrod, Ph.D.
+date: 2024-03-25
+categories: [Data Management] 
+draft: true 
+---
+
+Binning, or aggregating continuous data into discrete groups, is a very common data management technique.
+
+There are numerous reasons why you may need to bin a continuous variable into a categorical variable including:
+
+* To reduce noise in highly granular data.
+* To better identify trends with sparse data.
+* To aggregate data into groups for visual or statistical comparisons.
+* To create features for predictive models.
+* To create more informative visualizations.
+* and more...
+
+As you can see, there are different reasons to bin, so naturally there are many different methods to bin continuous data depending on the input data, and the format and intent of the resulting bins.
+
+:::{.callout-note}
+Note that I will not cover spatial or temporal binning here.
+:::
+
+

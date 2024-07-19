@@ -1,0 +1,35 @@
+---
+title: "Function Argument Checks"
+description: "Explore the many ways to check function arguments."
+author:
+  - name: Louis M Penrod, Ph.D.
+date: 2024-07-11
+categories: [Functions] 
+draft: true 
+---
+
+A coworker was recently presenting a new function which had a method of checking arguments/parameters provided to the function that I have not encountered yet. This came after recently getting very annoyed while documenting one of my own functions which enitre point is to check values provided to a very long script for a fairly complex process. This function runs dozens of checks to make sure the inputs for the arguments are correct so that the code following does not error. 
+
+After this experience with my own code, I thought there must be a better or easier way to check inputs. I typically use `{assertthat}` with a custom message (as this is how I was first introduced to the package and so that is how I always used it) or if statements with `{cli}` messages and `stop()`. These methods can get fairly lengthy as there may be multiple checks per function argument. 
+
+So I want to do a deep dive into methods in checking function arguments to see if I can identify better methods that what I currently use. I scoured though many blog posts and functions from many popular packages to see what other people use to check inputs and have summarized my findings below. I have added some pros and cons but these are purely from the perspective of my workflow so some of my cons may be pros in your eyes, or vice versa. 
+
+if()
+
+* missing()
+* abort()
+* stop()
+
+stopifnot()
+match.arg()
+{assertthat}
+{checkmate}
+{vetr}
+magrittr::assertr()
+{assertive}
+{ensurer}
+
+
+
+
+# Summarization
