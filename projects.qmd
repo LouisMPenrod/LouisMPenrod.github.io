@@ -13,3 +13,5 @@ listing:
 page-layout: full
 title-block-banner: true
 ---
+
+This page will contain projects I have completed and tools I have built.

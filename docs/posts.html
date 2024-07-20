@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Louis M. Penrod, Ph.D.&nbsp;- Resources</title>
+<title>Louis M. Penrod, Ph.D.&nbsp;- Posts</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -112,9 +112,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
 
     const options = {
-      valueNames: ['listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -195,11 +195,11 @@ window.Quarto = {
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./posts.html"> 
+    <a class="nav-link active" href="./posts.html" aria-current="page"> 
 <span class="menu-text">Posts</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./resources.html" aria-current="page"> 
+    <a class="nav-link" href="./resources.html"> 
 <span class="menu-text">Resources</span></a>
   </li>  
 </ul>
@@ -220,7 +220,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <div class="quarto-title-block"><div><h1 class="title">Resources</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+      <div class="quarto-title-block"><div><h1 class="title">Posts</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
                       </div>
   </div>
     
@@ -238,7 +238,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Tidy Tuesday">Tidy Tuesday <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -246,7 +246,7 @@ window.Quarto = {
 
 
 
-<p>This page contains deep dive posts into basic R code to help those with little to no coding experience. I will try to keep a table of contents to organize the posts in a logical order.</p>
+<p>This page will contain posts of fun content or challenges.</p>
 
 
 
@@ -255,7 +255,39 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-
+<div class="quarto-post image-right" data-index="0" data-categories="Tidy Tuesday" data-listing-date-sort="1721448000000" data-listing-file-modified-sort="1721515939080" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1350">
+<div class="thumbnail">
+<p><a href="./posts/2024-07-20_tidy_tuesday-2022-w33/index.html" class="no-external"></a></p><a href="./posts/2024-07-20_tidy_tuesday-2022-w33/index.html" class="no-external">
+<p class="card-img-top"><img src="posts\2024-07-20_tidy_tuesday-2022-w33\ttY2020W33_1.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2024-07-20_tidy_tuesday-2022-w33/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-07-20_tidy_tuesday-2022-w33/index.html" class="no-external">Tidy Tuesday - 2020 - Week 33</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-07-20_tidy_tuesday-2022-w33/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Tidy Tuesday'); return false;">
+Tidy Tuesday
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-07-20_tidy_tuesday-2022-w33/index.html" class="no-external">Moving an old Tidy Tuesday post to my new website</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-07-20_tidy_tuesday-2022-w33/index.html" class="no-external">
+<div class="listing-date">
+Jul 20, 2024
+</div>
+<div class="listing-author">
+Louis
+</div>
+</a>
+</div>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
@@ -700,9 +732,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Resources"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Posts"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">listing:</span><span class="co"> </span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">  contents: resources</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">  contents: posts</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">  sort: "date desc"</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">  type: default</span></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">  image-align: right</span></span>
@@ -715,7 +747,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="an">title-block-banner:</span><span class="co"> true</span></span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>This page contains deep dive posts into basic R code to help those with little to no coding experience. I will try to keep a table of contents to organize the posts in a logical order.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>This page will contain posts of fun content or challenges.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

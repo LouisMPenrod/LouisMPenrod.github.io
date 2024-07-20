@@ -1,7 +1,7 @@
 ---
-title: "Resources"
+title: "Posts"
 listing: 
-  contents: resources
+  contents: posts
   sort: "date desc"
   type: default
   image-align: right
@@ -14,4 +14,4 @@ page-layout: full
 title-block-banner: true
 ---
 
-This page contains deep dive posts into basic R code to help those with little to no coding experience. I will try to keep a table of contents to organize the posts in a logical order.
+This page will contain posts of fun content or challenges.

@@ -6,5 +6,11 @@
   {
     "listing": "/resources.html",
     "items": []
+  },
+  {
+    "listing": "/posts.html",
+    "items": [
+      "/posts/2024-07-20_tidy_tuesday-2022-w33/index.html"
+    ]
   }
 ]

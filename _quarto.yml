@@ -12,6 +12,8 @@ website:
         href: bio.qmd
       - text: Projects
         href: projects.qmd
+      - text: Posts
+        href: posts.qmd
       - text: Resources
         href: resources.qmd
     right: 
