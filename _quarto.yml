@@ -10,10 +10,10 @@ website:
         href: index.qmd
       - text: Bio
         href: bio.qmd
-      - text: Posts Test
-        href: posts.qmd
       - text: Projects
         href: projects.qmd
+      - text: Posts
+        href: posts.qmd
       - text: Resources
         href: resources.qmd
     right: 
