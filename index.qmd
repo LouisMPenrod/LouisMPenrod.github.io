@@ -1,9 +1,10 @@
 ---
 title: "Louis M. Penrod, Ph.D."
-image: "./images/2022-08_Headshot_staffBio.jpg"
+image: "./images/blurred.png"
 about: 
-  template: broadside
-  image-width: 15em
+  template: jolla
+  image-shape: round
+  image-width: 22em
   links: 
     - text: Email
       icon: envelope
@@ -16,18 +17,4 @@ toc: false
 
 I'm a data manager/programmer at Simulations Plus in the Clinical Pharmacology and Pharmacometrics Solutions business unit. In this role, I leverage my familiarity with R to process data, create figures, and generate dataset documentation. I enjoy developing tools and solutions in R that not only optimize workflows but also contribute to advancing data-driven approaches.
 
-## **Education**
-
-**Florida Institute of Technology** | Melbourne, FL  
-
-Ph.D. in Biological Sciences | August 2016 - May 2022    
-B.S. in Marine Biology | August 2012 - May 2016  
-B.S. in Aquaculture | August 2012 - May 2016  
-
-## **Experience**
-
-**Simulations Plus - Clinical Pharmacology and Pharmacometrics Solutions** | Data Manager | July 2022 - present
-
-**Florida Institute of Technology** | Teaching Assistant and Aqualab Manager | August 2024 - December 2021
-
-[Learn more about my career path in my bio!](bio.qmd)
+[Learn about my career path in my bio!](bio.qmd)
