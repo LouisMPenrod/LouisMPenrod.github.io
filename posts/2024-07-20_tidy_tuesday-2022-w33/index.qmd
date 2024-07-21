@@ -278,6 +278,8 @@ ggsave("ttY2020W33_1.png",
 # Final Figure
 
 ```{r}
+#| include: false
+
 knitr::include_graphics(here("posts","2024-07-20_tidy_tuesday-2022-w33", "ttY2020W33_1.png"))
 ```
 
