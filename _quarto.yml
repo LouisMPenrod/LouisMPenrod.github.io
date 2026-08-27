@@ -16,16 +16,18 @@ website:
         href: posts.qmd
       - text: Resources
         href: resources.qmd
-    right: 
+    right:
       - icon: github
-        href: https://github.com/LouisMPenrod 
+        href: https://github.com/LouisMPenrod
 format:
   html:
-    theme: flatly
+    theme: theme.scss
     css: styles.css
     toc: true
     code-link: true
     code-tools: true
+    mainfont: Archivo
+    monofont: Space Mono
 
 
 

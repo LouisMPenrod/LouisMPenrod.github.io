@@ -1,10 +1,10 @@
 ---
 title: "Louis M. Penrod, Ph.D."
 image: "./images/blurred.png"
-about: 
-  template: jolla
-  image-shape: round
-  image-width: 22em
+about:
+  template: trestles
+  image-shape: rectangle
+  image-width: 18em
   links: 
     - text: Email
       icon: envelope
@@ -15,6 +15,10 @@ about:
 toc: false
 ---
 
-I'm a data manager/programmer at Simulations Plus in the Clinical Pharmacology and Pharmacometrics Solutions business unit. In this role, I leverage my familiarity with R to process data, create figures, and generate dataset documentation. I enjoy developing tools and solutions in R that not only optimize workflows but also contribute to advancing data-driven approaches.
+What do fish spines, biofouling, aquaculture, agriculture, and pharmaceuticals have in common? Nothing except that I have used R to build tools or analyze data to create something useful around these subjects. Give me a dataset worth analyzing or a process that needs streamlining, and I am there!
 
-[Learn about my career path in my bio!](bio.qmd)
+Want to learn more about my past? Check out my [bio](bio.qmd). Curious what I'm working on right now? See my [projects](projects.qmd) and [posts](posts.qmd) — or follow along on social media *(links coming soon)*.
+
+## Recent Updates
+
+{{< include _now.qmd >}}

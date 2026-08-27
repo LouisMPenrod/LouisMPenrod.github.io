@@ -1,17 +1,15 @@
 ---
 title: "Resources"
-listing: 
-  contents: resources
-  sort: "date desc"
-  type: default
-  image-align: right
-  max-description-length: 175
-  date-format: medium
-  categories: true
-  sort-ui: false
-  filter-ui: false
 page-layout: full
 title-block-banner: true
 ---
 
-This page contains deep dive posts into basic R code to help those with little to no coding experience. I will try to keep a table of contents to organize the posts in a logical order.
+A collection of links, organized by subject, meant to work like a pseudo-course in R fundamentals.
+
+## Data Management
+
+- [Placeholder link](.) — one-line description.
+
+## Functions
+
+- [Placeholder link](.) — one-line description.
