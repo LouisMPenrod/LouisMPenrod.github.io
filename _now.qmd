@@ -1,6 +1,10 @@
 ::: {.now-board}
 
 ::: {.now-entry}
+[2026-08-27]{.now-date} [2026 #30DayChartChallenge Retrospective](posts/2026-08-27_30-day-chart-challenge-retrospective/index.qmd) -  Looking back on my contributions to the challenge.
+:::
+
+::: {.now-entry}
 [2024-07-20]{.now-date} [Tidy Tuesday post](posts/2024-07-20_tidy_tuesday-2022-w33/index.qmd) (2020, Week 33)
 :::
 
