@@ -51,7 +51,7 @@ This challenge gave me the opportunity to test it out, but I didn't just want to
 Next favorite is Distributions - Day 7: Multiscale.
 
 <div class="embed-card">
-<iframe src="day07_multiscale.html" height="650" title="Multiscale distribution app — US map with state-level zoom" style="width:100%; border:none;"></iframe>
+<iframe src="day07_multiscale.html" height="760" title="Multiscale distribution app — US map with state-level zoom" style="width:100%; border:none;"></iframe>
 </div>
 
 You can also view this [full-page in its own tab](https://019d11a5-ceb7-a2e0-a943-4886b74d3eac.share.connect.posit.cloud/).
