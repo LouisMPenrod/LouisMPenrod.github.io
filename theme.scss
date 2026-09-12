@@ -199,6 +199,12 @@ figcaption, .figure-caption {
   margin-bottom: 0.5rem;
 }
 
+// Posts with no image get an empty placeholder card from Quarto —
+// hide it instead of showing an empty sage box.
+.quarto-post .listing-item-img-placeholder {
+  display: none;
+}
+
 .quarto-post .thumbnail-image {
   border-radius: 4px;
 }
