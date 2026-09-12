@@ -5,6 +5,8 @@ author:
   - name: Louis M Penrod, Ph.D.
 date: 2026-09-11
 categories: [Quarto]
+image: capitol-senate.jpg
+image-alt: "The Senate wing of the U.S. Capitol Building"
 ---
 
 I've noticed a recurring pattern in several bits of proposed and passed legislation around tech that I'm concerned about. Not to get too much into the specific topic or my concerns other than saying that it deals with mandating that tech perform the operation of law enforcement; having the user of the tech prove each time they need to use the tech that they are not going to be operating in an illicit or illegal manner.
