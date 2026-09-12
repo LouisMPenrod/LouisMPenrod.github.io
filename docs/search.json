@@ -40,5 +40,19 @@
     "title": "Projects",
     "section": "",
     "text": "This is where the finished builds live from R packages, automation tools, and data projects, and beyond.\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Louis M. Penrod, Ph.D.",
+    "section": "",
+    "text": "What do fish spines, biofouling, aquaculture, agriculture, and pharmaceuticals have in common? Nothing except that I have used R to build tools or analyze data to create something useful around these subjects. Give me a dataset worth analyzing or a process that needs streamlining, and I am there!\nWant to learn more about my past? Check out my bio. Curious what I’m working on right now? See my projects and posts — or follow along on social media (links coming soon)."
+  },
+  {
+    "objectID": "index.html#recent-updates",
+    "href": "index.html#recent-updates",
+    "title": "Louis M. Penrod, Ph.D.",
+    "section": "Recent Updates",
+    "text": "Recent Updates\n\n\n2026-09-11 Letters to Senators - Using parameterized Quarto to write letters to all 100 senators.\n\n\n2026-08-27 2026 #30DayChartChallenge Retrospective - Looking back on my contributions to the challenge.\n\n\n2024-07-20 Tidy Tuesday post (2020, Week 33)"
   }
 ]
