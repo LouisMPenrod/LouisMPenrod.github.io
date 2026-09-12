@@ -1,0 +1,52 @@
+---
+format:
+  letter-typst: default
+params: {party: null}
+---
+
+
+
+I think you should know something.
+
+```{r}
+#| echo: false
+#| results: asis
+
+if(params$party == "D"){
+  cat("Message for a democrat senator.")
+} else if (params$party == "R"){
+  cat("Message for a republican senator.")
+} else {
+  cat("Message for an independent senator.")
+}
+```
+
+We can also do this in-line. This is an `r if (params$party == "D") "in-line message for a democrat senator" else if (params$party == "R") "in-line message for a republican senator" else "in-line message for an independent senator"`.
+
+We can also do entire chunks.  
+
+```{r}
+#| eval: !expr params$party == "D"
+#| echo: false
+#| results: asis
+
+cat("Message for a democrat senator.")
+```
+
+```{r}
+#| eval: !expr params$party == "R"
+#| echo: false
+#| results: asis
+
+cat("Message for a republican senator.")
+```
+
+```{r}
+#| eval: !expr params$party == "I"
+#| echo: false
+#| results: asis
+
+cat("Message for an independent senator.")
+```
+
+Thanks

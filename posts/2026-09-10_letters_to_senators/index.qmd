@@ -1,0 +1,229 @@
+---
+title: "Letters to Senators"
+description: "Using parameterized Quarto to write letters to all 100 senators"
+author:
+  - name: Louis M Penrod, Ph.D.
+date: 2026-09-11
+categories: [Quarto]
+---
+
+I've noticed a recurring pattern in several bits of proposed and passed legislation around tech that I'm concerned about. Not to get too much into the specific topic or my concerns other than saying that it deals with mandating that tech perform the operation of law enforcement; having the user of the tech prove each time they need to use the tech that they are not going to be operating in an illicit or illegal manner.
+
+I feel strongly enough about this subject that I have the desire to write not just to my senators, but all 100 US senators. 
+
+Quarto was the first thought that came into my mind when thinking about how I was going to write 100 letters that need customized addresses, salutations, and text depending on the party affiliation of the specific senator. 
+
+I'll go into details below on how I plan to write these letters following these steps.
+
+1. Get data - pull name, party, and office address from the Senate's contact page. 
+2. Get template - grab the letter Quarto/Typst template.
+3. Modify Qmd - add parameterization to the template with conditional sections to customize per senator and party.  
+4. Construct letters - render all 100 PDFs.  
+5. Merge Letters - Merge into a single PDF for simplified printing.
+
+# 1. Get data
+
+[senate.gov](https://www.senate.gov/) has an XML file with the information on all senators including names, office addresses, party, and more.
+
+It is fairly simple to extract this information into a dataset.
+
+```{r}
+#| eval: false
+
+library(xml2)
+library(dplyr)
+library(purrr)
+library(stringr)
+
+url <- "https://www.senate.gov/general/contact_information/senators_cfm.xml"
+doc <- read_xml(url)
+members <- xml_find_all(doc, "//member")
+
+senators <- map_dfr(members, function(m) {
+  tibble(
+    first_name  = xml_text(xml_find_first(m, "./first_name")),
+    last_name   = xml_text(xml_find_first(m, "./last_name")),
+    party       = xml_text(xml_find_first(m, "./party")),
+    state       = xml_text(xml_find_first(m, "./state")),
+    office_address = trimws(gsub("\\s+", " ",
+                                 xml_text(xml_find_first(m, "./address")))),
+    split_address = str_replace(office_address, "Building ", "Building\n")
+  )
+})
+
+
+write.csv(senators, "senators.csv", row.names = FALSE)
+```
+
+A few notes:
+
+- I've added a line break in the `office_address` to create the `split_address` so it can be more easily split into the usual two line address in letters.  
+- I've exported as a CSV but you can easily pass this directly into step 4.
+
+
+# 2. Get template
+
+You could make your own Typst template, but there is already a great template built specifically for letter formatting with Quarto.
+
+In your terminal, run the following:
+`quarto use template quarto-ext/typst-templates/letter`
+
+It should ask a few questions including confirming whether you trust the source and if you want to construct this in a subdirectory. Since this is a small project, I've kept everything at the main R Project level. Two important things are made with this. 
+
+The first is the _extensions subfolder. This will hold several things, but mainly the Typst partials typst-template.typ and typst-show.typ. 
+
+The second is the qmd file. This will have the YAML heading which most importantly sets the format to use the letter-typst format, but also shows what inputs the template accepts. 
+A few things to point out here. Most inputs are quoted, but the recipient is not and uses "\\" to indicate line breaks. 
+We don't actually need any of this besides the format because we will be using `quarto_render()` and passing the other values in. 
+You can remove everything from this qmd except the format, leaving just:
+
+``` yaml
+---
+format:
+  letter-typst: default
+---
+```
+
+# 3. Modify Qmd
+
+Now comes the fun part. 
+
+Let's first add the parameterization aspect into the YAML header. Because the inputs like the senator's name and address will be handled in the YAML header, the only real parameter I need here is the party. This will control certain text that varies depending on the party. 
+So we are left with: 
+
+``` yaml
+---
+format:
+  letter-typst: default
+params: {party: null}
+---
+```
+
+Now we can build the body. 
+
+There are several ways to add conditional text into the letter. 
+
+First, using conditionals within a chunk.
+
+I would do this with medium bits of text that need to vary based on the party. 
+
+``` r
+#| echo: false
+#| results: asis
+
+if(params$party == "D"){
+  cat("Message for a democrat senator.")
+} else if (params$party == "R"){
+  cat("Message for a republican senator.")
+} else {
+  cat("Message for an independent senator.")
+}
+```
+
+Second, you can use in-line conditionals. I'd use this for short differences like single sentences.
+
+```{r}
+#| echo: false
+#| results: asis
+
+cat('``` r\n`r if (params$party == "D") "in-line message for a democrat senator" else\n\tif (params$party == "R") "in-line message for a republican senator" else\n\t"in-line message for an independent senator"`\n```')
+```
+
+Finally, you can make a chunk specifically for a specific condition. I would use this for paragraphs meant for a specific party. Use the eval option with `!expr` to tell Quarto to evaluate the following condition.
+
+``` r
+#| eval: !expr params$party == "I"
+#| echo: false
+#| results: asis
+
+cat("Message for an independent senator.")
+```
+
+If you put this all together, you can get [this qmd file](_letter.qmd).
+
+::: {.callout-warning}
+The file downloads as `_letter.qmd`. If you're dropping it into your own Quarto project, rename it to remove the leading underscore first.
+:::
+
+# 4. Construct letters
+
+With the qmd prepared, we can set up the parameterization.
+
+First, let's get the libraries for this next step and read in the CSV containing the senators' information.
+
+```{r}
+#| eval: false
+
+library(quarto)
+library(dplyr)
+library(purrr)
+library(pdftools)
+
+senators <- read.csv("senators.csv")
+
+```
+
+Next, we will iterate over each row.
+
+This works in several steps.
+
+1. Construct the text that goes into the recipient field.
+2. Open the `quarto_render()` call.
+3. Provide the qmd as the `input`.
+4. Define the outputs. I struggle with getting this to output in a different directory, so this just outputs each to the current directory.
+5. Pass in `metadata`. These are the inputs that were originally in the YAML header. 
+6. Pass in the `execute_params`, which in this case is just the party.
+
+All of this combined gives the following.
+
+```{r}
+#| eval: false
+
+pwalk(senators, function(first_name, last_name, party, split_address, ...) {
+  
+  recipient_text <- paste0(
+    "Senator ", first_name, " ", last_name, " \\\n",
+    "United States Senate \\\n",
+    gsub("\n", " \\\n", split_address, fixed = TRUE)
+  )
+  
+  quarto_render(
+    input          = "letter.qmd",
+    output_file    = paste0("letter_", last_name, ".pdf"),
+    metadata = list(
+      subject   = "Topic of Choice",
+      name      = "Your Name",
+      sender    = "Your Name, Your Address",
+      recipient = recipient_text,
+      sent      = paste0("Your City, ", format(Sys.Date(), "%B %d, %Y"))
+    ),
+    execute_params = list(
+      party          = party
+    )
+  )
+})
+```
+
+Run this to create all 100 letters.
+
+# 5. Merge letters
+
+Because I don't want to have to deal with trying to organize 100 print jobs, I'd like to merge all of these together.
+
+This only takes two lines.
+
+```{r}
+#| eval: false
+
+pdf_files <- list.files(".", pattern = "letter_.*\\.pdf$", full.names = TRUE)
+
+pdf_combine(pdf_files, output = "all_letters.pdf")
+```
+
+Now I have a single PDF containing all 100 letters, which I can print in a single print job.
+
+# Conclusion
+
+Over the next week or so, I'll customize the text for my specific topic and mail this out.
+
+If you've got something to say to 100 people at once, parameterized Quarto make it a lot less painful.
