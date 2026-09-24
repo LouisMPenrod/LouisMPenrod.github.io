@@ -4,12 +4,9 @@ page-layout: full
 title-block-banner: true
 ---
 
-A collection of links, organized by subject, meant to work like a pseudo-course in R fundamentals.
+A collection of links and documents, organized by subject. These are usually deeper dives into sepcific topics.
 
-## Data Management
 
-- [Placeholder link](.) — one-line description.
+## Quick Tips
 
-## Functions
-
-- [Placeholder link](.) — one-line description.
+- [IDE Settings - RStudio](resources/ide-settings-rstudio.qmd) — RStudio settings worth changing.
