@@ -1,0 +1,133 @@
+---
+title: "Data Storage Formats"
+author:
+  - name: Louis M Penrod, Ph.D.
+date-modified: last-modified
+---
+
+This document will go over the many, many ways data can be stored and how to read them into R. This will be a living document; growing as time goes on to explore topics more in depth, add new methods of reading in data, and add new data formats that can be read in.
+
+# Text: Free-form
+
+## Generic text files
+
+## Listings
+
+## Logs
+
+# Text: Self-describing
+
+## JSON
+
+## YAML
+
+## XML
+
+## HTML
+
+# Text: Delimited
+
+## CSV
+
+## TSV
+
+## Other separated text file
+
+# Text: Layout-dependent
+
+## Fixed-width
+
+# Spreadsheets
+
+## Excel (.xlsx, .xls)
+
+## .ods
+
+## Google Sheets
+
+# R-native
+
+## RDS
+
+## RData
+
+## QS/QMS
+
+# Statistical software
+
+## SAS7BDAT/SAS7BCAT
+
+## XPT
+
+## SPSS
+
+## Stata
+
+# Documents
+
+## Word
+
+## RTF
+
+## PDF (text-based or scanned)
+
+# Images and Videos
+
+## Photos
+
+## Video frames
+
+## EXIF metadata
+
+# Databases
+
+## DuckDB
+
+## Other DBs
+
+## SQLite
+
+## MS Access
+
+# Cloud warehouse/lakes
+
+## Databricks
+
+## Snowflake
+
+# Spatial
+
+## Raster
+
+## NetCDF
+
+## Shapefiles
+
+## GeoPackage
+
+## GeoJSON
+
+## KML
+
+# Binary/columnar
+
+## Parquet
+## Feather/Arrow
+## HDF5
+
+# APIs
+
+## Raw API pulls
+## R packages that hit APIs and format
+
+# Other languages' formats
+
+## MATLAB
+## Python pickle/NumPy
+
+# Domain specific
+
+There are so many formats that are only used in specific domains and are less common. 
+
+These could be things like signal/audio, DICOM, or types specifically for things like genomics.
+

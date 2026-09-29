@@ -4,9 +4,14 @@ page-layout: full
 title-block-banner: true
 ---
 
-A collection of links and documents, organized by subject. These are usually deeper dives into sepcific topics.
+A collection of links and documents, organized by subject. These are usually deeper dives into specific topics.
 
 
 ## Quick Tips
 
-- [IDE Settings - RStudio](resources/ide-settings-rstudio.qmd) — RStudio settings worth changing.
+- [IDE Settings - RStudio](resources/ide-settings-rstudio.qmd) - RStudio settings worth changing.
+
+
+## Data Storage
+
+- [Data Storage Formats](resources/data_storage_formats.qmd) - how data can be stored and how to read each into R.

@@ -4,14 +4,14 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "A collection of links and documents, organized by subject. These are usually deeper dives into sepcific topics."
+    "text": "A collection of links and documents, organized by subject. These are usually deeper dives into specific topics."
   },
   {
     "objectID": "resources.html#quick-tips",
     "href": "resources.html#quick-tips",
     "title": "Resources",
     "section": "Quick Tips",
-    "text": "Quick Tips\n\nIDE Settings - RStudio — RStudio settings worth changing."
+    "text": "Quick Tips\n\nIDE Settings - RStudio - RStudio settings worth changing."
   },
   {
     "objectID": "projects.html",
@@ -103,5 +103,341 @@
     "title": "IDE Settings - RStudio",
     "section": "",
     "text": "Rainbow Parentheses\nRainbow parentheses help keep track of your parentheses and brackets by coloring them in sets.\nTurn them on by:\n1 - Go to Tools\n2 - Global Options…\n3 - Code\n4 - Display\n5 - Check “Use rainbow parentheses”\nYour parentheses and brackets will now look like: \n\n\nPane Layout\nChanging the pane layout can simplify your workflow.\nThe script and console both want to be tall, but they are stacked by default.\nPutting them side-by-side can help line up your code and output.\nTo change the layout, click the Workspace Pane button then click “Console on the Right”"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html",
+    "href": "resources/data_storage_formats.html",
+    "title": "Data Storage Formats",
+    "section": "",
+    "text": "This document will go over the many, many ways data can be stored and how to read them into R. This will be a living document; growing as time goes on to explore topics more in depth, add new methods of reading in data, and add new data formats that can be read in."
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#generic-text-files",
+    "href": "resources/data_storage_formats.html#generic-text-files",
+    "title": "Data Storage Formats",
+    "section": "Generic text files",
+    "text": "Generic text files"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#listings",
+    "href": "resources/data_storage_formats.html#listings",
+    "title": "Data Storage Formats",
+    "section": "Listings",
+    "text": "Listings"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#logs",
+    "href": "resources/data_storage_formats.html#logs",
+    "title": "Data Storage Formats",
+    "section": "Logs",
+    "text": "Logs"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#json",
+    "href": "resources/data_storage_formats.html#json",
+    "title": "Data Storage Formats",
+    "section": "JSON",
+    "text": "JSON"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#yaml",
+    "href": "resources/data_storage_formats.html#yaml",
+    "title": "Data Storage Formats",
+    "section": "YAML",
+    "text": "YAML"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#xml",
+    "href": "resources/data_storage_formats.html#xml",
+    "title": "Data Storage Formats",
+    "section": "XML",
+    "text": "XML"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#html",
+    "href": "resources/data_storage_formats.html#html",
+    "title": "Data Storage Formats",
+    "section": "HTML",
+    "text": "HTML"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#csv",
+    "href": "resources/data_storage_formats.html#csv",
+    "title": "Data Storage Formats",
+    "section": "CSV",
+    "text": "CSV"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#tsv",
+    "href": "resources/data_storage_formats.html#tsv",
+    "title": "Data Storage Formats",
+    "section": "TSV",
+    "text": "TSV"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#other-separated-text-file",
+    "href": "resources/data_storage_formats.html#other-separated-text-file",
+    "title": "Data Storage Formats",
+    "section": "Other separated text file",
+    "text": "Other separated text file"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#fixed-width",
+    "href": "resources/data_storage_formats.html#fixed-width",
+    "title": "Data Storage Formats",
+    "section": "Fixed-width",
+    "text": "Fixed-width"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#excel-.xlsx-.xls",
+    "href": "resources/data_storage_formats.html#excel-.xlsx-.xls",
+    "title": "Data Storage Formats",
+    "section": "Excel (.xlsx, .xls)",
+    "text": "Excel (.xlsx, .xls)"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#ods",
+    "href": "resources/data_storage_formats.html#ods",
+    "title": "Data Storage Formats",
+    "section": ".ods",
+    "text": ".ods"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#google-sheets",
+    "href": "resources/data_storage_formats.html#google-sheets",
+    "title": "Data Storage Formats",
+    "section": "Google Sheets",
+    "text": "Google Sheets"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#rds",
+    "href": "resources/data_storage_formats.html#rds",
+    "title": "Data Storage Formats",
+    "section": "RDS",
+    "text": "RDS"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#rdata",
+    "href": "resources/data_storage_formats.html#rdata",
+    "title": "Data Storage Formats",
+    "section": "RData",
+    "text": "RData"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#qsqms",
+    "href": "resources/data_storage_formats.html#qsqms",
+    "title": "Data Storage Formats",
+    "section": "QS/QMS",
+    "text": "QS/QMS"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#sas7bdatsas7bcat",
+    "href": "resources/data_storage_formats.html#sas7bdatsas7bcat",
+    "title": "Data Storage Formats",
+    "section": "SAS7BDAT/SAS7BCAT",
+    "text": "SAS7BDAT/SAS7BCAT"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#xpt",
+    "href": "resources/data_storage_formats.html#xpt",
+    "title": "Data Storage Formats",
+    "section": "XPT",
+    "text": "XPT"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#spss",
+    "href": "resources/data_storage_formats.html#spss",
+    "title": "Data Storage Formats",
+    "section": "SPSS",
+    "text": "SPSS"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#stata",
+    "href": "resources/data_storage_formats.html#stata",
+    "title": "Data Storage Formats",
+    "section": "Stata",
+    "text": "Stata"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#word",
+    "href": "resources/data_storage_formats.html#word",
+    "title": "Data Storage Formats",
+    "section": "Word",
+    "text": "Word"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#rtf",
+    "href": "resources/data_storage_formats.html#rtf",
+    "title": "Data Storage Formats",
+    "section": "RTF",
+    "text": "RTF"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#pdf-text-based-or-scanned",
+    "href": "resources/data_storage_formats.html#pdf-text-based-or-scanned",
+    "title": "Data Storage Formats",
+    "section": "PDF (text-based or scanned)",
+    "text": "PDF (text-based or scanned)"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#photos",
+    "href": "resources/data_storage_formats.html#photos",
+    "title": "Data Storage Formats",
+    "section": "Photos",
+    "text": "Photos"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#video-frames",
+    "href": "resources/data_storage_formats.html#video-frames",
+    "title": "Data Storage Formats",
+    "section": "Video frames",
+    "text": "Video frames"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#exif-metadata",
+    "href": "resources/data_storage_formats.html#exif-metadata",
+    "title": "Data Storage Formats",
+    "section": "EXIF metadata",
+    "text": "EXIF metadata"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#duckdb",
+    "href": "resources/data_storage_formats.html#duckdb",
+    "title": "Data Storage Formats",
+    "section": "DuckDB",
+    "text": "DuckDB"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#other-dbs",
+    "href": "resources/data_storage_formats.html#other-dbs",
+    "title": "Data Storage Formats",
+    "section": "Other DBs",
+    "text": "Other DBs"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#sqlite",
+    "href": "resources/data_storage_formats.html#sqlite",
+    "title": "Data Storage Formats",
+    "section": "SQLite",
+    "text": "SQLite"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#ms-access",
+    "href": "resources/data_storage_formats.html#ms-access",
+    "title": "Data Storage Formats",
+    "section": "MS Access",
+    "text": "MS Access"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#databricks",
+    "href": "resources/data_storage_formats.html#databricks",
+    "title": "Data Storage Formats",
+    "section": "Databricks",
+    "text": "Databricks"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#snowflake",
+    "href": "resources/data_storage_formats.html#snowflake",
+    "title": "Data Storage Formats",
+    "section": "Snowflake",
+    "text": "Snowflake"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#raster",
+    "href": "resources/data_storage_formats.html#raster",
+    "title": "Data Storage Formats",
+    "section": "Raster",
+    "text": "Raster"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#netcdf",
+    "href": "resources/data_storage_formats.html#netcdf",
+    "title": "Data Storage Formats",
+    "section": "NetCDF",
+    "text": "NetCDF"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#shapefiles",
+    "href": "resources/data_storage_formats.html#shapefiles",
+    "title": "Data Storage Formats",
+    "section": "Shapefiles",
+    "text": "Shapefiles"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#geopackage",
+    "href": "resources/data_storage_formats.html#geopackage",
+    "title": "Data Storage Formats",
+    "section": "GeoPackage",
+    "text": "GeoPackage"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#geojson",
+    "href": "resources/data_storage_formats.html#geojson",
+    "title": "Data Storage Formats",
+    "section": "GeoJSON",
+    "text": "GeoJSON"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#kml",
+    "href": "resources/data_storage_formats.html#kml",
+    "title": "Data Storage Formats",
+    "section": "KML",
+    "text": "KML"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#parquet",
+    "href": "resources/data_storage_formats.html#parquet",
+    "title": "Data Storage Formats",
+    "section": "Parquet",
+    "text": "Parquet"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#featherarrow",
+    "href": "resources/data_storage_formats.html#featherarrow",
+    "title": "Data Storage Formats",
+    "section": "Feather/Arrow",
+    "text": "Feather/Arrow"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#hdf5",
+    "href": "resources/data_storage_formats.html#hdf5",
+    "title": "Data Storage Formats",
+    "section": "HDF5",
+    "text": "HDF5"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#raw-api-pulls",
+    "href": "resources/data_storage_formats.html#raw-api-pulls",
+    "title": "Data Storage Formats",
+    "section": "Raw API pulls",
+    "text": "Raw API pulls"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#r-packages-that-hit-apis-and-format",
+    "href": "resources/data_storage_formats.html#r-packages-that-hit-apis-and-format",
+    "title": "Data Storage Formats",
+    "section": "R packages that hit APIs and format",
+    "text": "R packages that hit APIs and format"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#matlab",
+    "href": "resources/data_storage_formats.html#matlab",
+    "title": "Data Storage Formats",
+    "section": "MATLAB",
+    "text": "MATLAB"
+  },
+  {
+    "objectID": "resources/data_storage_formats.html#python-picklenumpy",
+    "href": "resources/data_storage_formats.html#python-picklenumpy",
+    "title": "Data Storage Formats",
+    "section": "Python pickle/NumPy",
+    "text": "Python pickle/NumPy"
+  },
+  {
+    "objectID": "resources.html#data-storage",
+    "href": "resources.html#data-storage",
+    "title": "Resources",
+    "section": "Data Storage",
+    "text": "Data Storage\n\nData Storage Formats - how data can be stored and how to read each into R."
   }
 ]
