@@ -9,11 +9,33 @@ This document will go over the many, many ways data can be stored and how to rea
 
 # Text: Free-form
 
-## Generic text files
+There is not too much advice I can give here because every free-form text-base file is going to be different. 
 
-## Listings
+There may be some standardization if a particular software is writing the files (e.g., modeling software writing standard outputs) in which case it would be best to write a custom function (or find one online if it exists) to parse that file.
 
-## Logs
+This also gets into the realm of listings and some loggers, depending on how they have been set up.
+
+Some loggers output free-form text, but others could be fixed-width or even delimited. For the free-form versions, again, you are going to need a custom parser. I do find these easier than listings because they usually don't wrap records onto multiple lines as there is no width restrictions like listing have.
+
+Listings are a whole different discussion. I really do not understand how in the 21st century, the best way to communicate record level data is to print those records into a file. This causes several issues with wrapping labels and records over multiple lines because the document the listing is printed on has a limited number of characters wide it can be.
+If pulling records from an XPT, labels are allowed to be 40 characters but the listing usually has to be about 80-120 characters wide depending on the text size of the document it is going in. That means variable labels often have to be wrapped, otherwise you could only end up with 2-3 columns before hitting your max number of characters. 
+If there are too many variables, the listing is split and the next set of variables are printed with only a row number to link it to the other variables of the same record. 
+It still blows my mind that this is still common practice instead of providing an actual data file (even and excel file would be better, and that is saying a lot coming from me). 
+
+Unlike fixed-width, each column can be a different width so parsing these is a challenge usually requiring a custom function to determine the start and end of each column to then split off of and get into a data frame. If variables are wrapping, you will need to retain the row number and merge the chunks back together.
+
+Only advice I can give without getting into the weeds too much is to read in the data using one of the functions below to get the text into R, then figure out any rules you can detect on the structure and spacing to parse out what you need.  
+
+```{r}
+#| eval: false
+
+readLines()
+
+#or
+
+readr::read_lines()
+```
+
 
 # Text: Self-describing
 
