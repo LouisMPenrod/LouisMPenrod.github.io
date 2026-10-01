@@ -283,6 +283,16 @@ figcaption, .figure-caption {
 }
 
 // ------------------------------------------------------------
+// Code cell output — Quarto's base CSS hardcodes plain <pre>
+// output blocks (printed console output, not syntax-highlighted
+// source) to black text, which is invisible on this dark theme.
+// ------------------------------------------------------------
+.cell-output pre,
+.cell-output pre code {
+  color: $bone;
+}
+
+// ------------------------------------------------------------
 // Tables
 // ------------------------------------------------------------
 table {
