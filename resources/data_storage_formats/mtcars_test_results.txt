@@ -1,0 +1,25 @@
+Statistical Test Results - mtcars dataset
+Response: mpg | Grouping factor: gear
+
+=== SHAPIRO-WILK NORMALITY TEST (mpg) ===
+
+	Shapiro-Wilk normality test
+
+data:  mtcars$mpg
+W = 0.94756, p-value = 0.1229
+
+=== BARTLETT TEST OF HOMOGENEITY OF VARIANCES ===
+
+	Bartlett test of homogeneity of variances
+
+data:  mpg by gear
+Bartlett's K-squared = 3.8253, df = 2, p-value = 0.1477
+
+=== ONE-WAY ANOVA ===
+            Df Sum Sq Mean Sq F value   Pr(>F)    
+gear         2  483.2  241.62    10.9 0.000295 ***
+Residuals   29  642.8   22.17                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+=== END OF RESULTS ===
