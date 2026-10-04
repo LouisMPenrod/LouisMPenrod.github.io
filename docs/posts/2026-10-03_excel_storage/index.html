@@ -235,7 +235,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>Many issues happen before your data gets into R; they starts with your data. Sorry if you are expecting an R post, but this will be purely a data rant.</p>
+<p>Many issues happen before your data gets into R; they start with your data. Sorry if you were expecting an R post, but this will be purely a data rant.</p>
 <p>If your data looks like this, please pay close attention.</p>
 <p><img src="resources/whole_sheet.png" class="img-fluid" alt="An image of an Excel sheet that has what some people think is pretty data"></p>
 <p>I’ve met people who genuinely think data sheets like this look good, and I’ve received enough datasheets from others that look like this that they must think this is a decent way to store their data.</p>
@@ -246,7 +246,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>Structural Issues</h1>
 <section id="non-tidy-data" class="level2">
 <h2 class="anchored" data-anchor-id="non-tidy-data">Non-Tidy Data</h2>
-<p>This is probably the most common issue, and it makes several other issues to easier to introduce.</p>
+<p>This is probably the most common issue, and it makes several other issues easier to introduce.</p>
 <p>I’m not going to go into what tidy data looks like because others have already done that for me. Here is the walkthrough from the pros: <a href="https://tidyr.tidyverse.org/articles/tidy-data.html">Tidy data</a></p>
 <p>There are several other names for tidy data (e.g., long), but they all mean a similar thing: each observation or sample gets its own row. How you define a sample may differ depending on the study design, but it will generally be a similar structure, or a simple pivot away.</p>
 <p>There are exceptions such as multivariate analysis, but tidy data usually makes reading in, cleaning, and analyzing your data easier.</p>
@@ -256,7 +256,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="merged-cells" class="level2">
 <h2 class="anchored" data-anchor-id="merged-cells">Merged Cells</h2>
 <p>Merged cells cause issues when you read the table into any software to perform the actual analysis.</p>
-<p>Merged cells could be merged headers across columns, which are often a symptom of non-tidy data, or merged rows, which typically is used to show rows belong to the same group.</p>
+<p>Merged cells could be merged headers across columns, which are often a symptom of non-tidy data, or merged rows, which are typically used to show rows belong to the same group.</p>
 <p><img src="./resources/merged_rows.png" class="img-fluid" alt="Excel cells merged across rows to show rows are grouped"></p>
 <p>The fix is to make your data tidy and fill your rows in so each record can stand alone.</p>
 </section>
@@ -274,7 +274,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="missing-or-excess-information" class="level2">
 <h2 class="anchored" data-anchor-id="missing-or-excess-information">Missing or Excess Information</h2>
 <p>All data needs to be in a column. Each column should also include a variable name to give it some context. Having floating values out to the right is not helpful because no one knows what they mean.</p>
-<p>Having floating information in headers or footers that are important or adds details to records should be added as columns in the dataset if that information is crucial. If you need to make flag or comment columns to hold that information, do it. Footnotes with symbols in cells will also change any numeric data to character, which then would have to be cleaned and turned back into a number. Therefore, that asterisk or other mark is going to be removed from that cell anyway.</p>
+<p>Having floating information in headers or footers that is important or adds details to records should be added as columns in the dataset if that information is crucial. If you need to make flag or comment columns to hold that information, do it. Footnotes with symbols in cells will also change any numeric data to character, which then would have to be cleaned and turned back into a number. Therefore, that asterisk or other mark is going to be removed from that cell anyway.</p>
 </section>
 <section id="lack-of-structural-hierarchy" class="level2">
 <h2 class="anchored" data-anchor-id="lack-of-structural-hierarchy">Lack of Structural Hierarchy</h2>
@@ -390,7 +390,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
 <li>Multi-line headers. The headers in the example above are not just wrapped but contain new-line characters. When read into software, those new-line characters are retained.<br>
 </li>
-<li>Dates in Excel. You cannot avoid putting dates in Excel, but I think, at this point, everyone has had issues with dates in Excel. Those issues persist when you read them into R. My recommendation is to make sure the cell format in Excel is set to “Text”. This way, it can be read as text and converted in R to an actual date. If you already have your dates in Excel and try to convert to them to Text, it will mess them all up. Copy the column to something like Notepad, change the format to Text in Excel, then paste the values back.</li>
+<li>Dates in Excel. You cannot avoid putting dates in Excel, but I think, at this point, everyone has had issues with dates in Excel. Those issues persist when you read them into R. My recommendation is to make sure the cell format in Excel is set to “Text”. This way, it can be read as text and converted in R to an actual date. If you already have your dates in Excel and try to convert them to Text, it will mess them all up. Copy the column to something like Notepad, change the format to Text in Excel, then paste the values back.</li>
 </ul>
 </section>
 <section id="off-the-wall" class="level1">
@@ -399,7 +399,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>Images of tables rather than the actual data.<br>
 </li>
-<li>Values with strike-through formatting. What does that mean? Is the data wrong, Should the value/row be excluded? Honestly insane.<br>
+<li>Values with strike-through formatting. What does that mean? Is the data wrong? Should the value/row be excluded? Honestly insane.<br>
 </li>
 <li>Comic Sans. Maybe it is my millennial side showing, but we had it drilled into us that it is the most unprofessional font in existence.</li>
 </ul>
@@ -877,7 +877,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="an">image-alt:</span><span class="co"> "An image of an Excel sheet that has what some people think is pretty data"</span></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>Many issues happen before your data gets into R; they starts with your data. Sorry if you are expecting an R post, but this will be purely a data rant.</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>Many issues happen before your data gets into R; they start with your data. Sorry if you were expecting an R post, but this will be purely a data rant.</span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>If your data looks like this, please pay close attention.</span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
@@ -895,7 +895,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">## Non-Tidy Data</span></span>
 <span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>This is probably the most common issue, and it makes several other issues to easier to introduce. </span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>This is probably the most common issue, and it makes several other issues easier to introduce. </span>
 <span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>I'm not going to go into what tidy data looks like because others have already done that for me. Here is the walkthrough from the pros: <span class="co">[</span><span class="ot">Tidy data</span><span class="co">](https://tidyr.tidyverse.org/articles/tidy-data.html)</span></span>
 <span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
@@ -911,7 +911,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>Merged cells cause issues when you read the table into any software to perform the actual analysis. </span>
 <span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>Merged cells could be merged headers across columns, which are often a symptom of non-tidy data, or merged rows, which typically is used to show rows belong to the same group. </span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>Merged cells could be merged headers across columns, which are often a symptom of non-tidy data, or merged rows, which are typically used to show rows belong to the same group. </span>
 <span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="al">![](./resources/merged_rows.png)</span>{fig-alt="Excel cells merged across rows to show rows are grouped"}</span>
 <span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
@@ -935,7 +935,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>All data needs to be in a column. Each column should also include a variable name to give it some context. Having floating values out to the right is not helpful because no one knows what they mean.</span>
 <span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>Having floating information in headers or footers that are important or adds details to records should be added as columns in the dataset if that information is crucial. If you need to make flag or comment columns to hold that information, do it. Footnotes with symbols in cells will also change any numeric data to character, which then would have to be cleaned and turned back into a number. Therefore, that asterisk or other mark is going to be removed from that cell anyway.</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>Having floating information in headers or footers that is important or adds details to records should be added as columns in the dataset if that information is crucial. If you need to make flag or comment columns to hold that information, do it. Footnotes with symbols in cells will also change any numeric data to character, which then would have to be cleaned and turned back into a number. Therefore, that asterisk or other mark is going to be removed from that cell anyway.</span>
 <span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="fu">## Lack of Structural Hierarchy</span></span>
 <span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span>
@@ -980,7 +980,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Multiple sentinel values. For those who are not aware, sentinel values are those that represent some signal. Usually, this refers to NA or missing values. You should be consistent in using a single value in your dataset whether that is empty cells, NA, N/A, etc.  </span>
 <span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Cell or text formatting. No highlight or fill, text color, bold/italics, strike-through, etc. Is the presence of this formatting meaningful or not? Is that one cell with yellow highlighting important? Who knows? Maybe you do, if it is your data, but how about in a year? If it is important, add a dedicated column and a comment or flag.  </span>
 <span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Multi-line headers. The headers in the example above are not just wrapped but contain new-line characters. When read into software, those new-line characters are retained.  </span>
-<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Dates in Excel. You cannot avoid putting dates in Excel, but I think, at this point, everyone has had issues with dates in Excel. Those issues persist when you read them into R. My recommendation is to make sure the cell format in Excel is set to "Text". This way, it can be read as text and converted in R to an actual date. If you already have your dates in Excel and try to convert to them to Text, it will mess them all up. Copy the column to something like Notepad, change the format to Text in Excel, then paste the values back.</span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Dates in Excel. You cannot avoid putting dates in Excel, but I think, at this point, everyone has had issues with dates in Excel. Those issues persist when you read them into R. My recommendation is to make sure the cell format in Excel is set to "Text". This way, it can be read as text and converted in R to an actual date. If you already have your dates in Excel and try to convert them to Text, it will mess them all up. Copy the column to something like Notepad, change the format to Text in Excel, then paste the values back.</span>
 <span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a></span>
@@ -989,7 +989,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>This is just a list of the absolute off-the-wall things I've seen in Excel sheets.</span>
 <span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Images of tables rather than the actual data.  </span>
-<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Values with strike-through formatting. What does that mean? Is the data wrong, Should the value/row be excluded? Honestly insane.  </span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Values with strike-through formatting. What does that mean? Is the data wrong? Should the value/row be excluded? Honestly insane.  </span>
 <span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Comic Sans. Maybe it is my millennial side showing, but we had it drilled into us that it is the most unprofessional font in existence. </span>
 <span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a> </span>
 <span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a></span>

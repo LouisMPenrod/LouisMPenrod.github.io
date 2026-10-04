@@ -438,21 +438,21 @@
     "href": "posts/2026-10-03_excel_storage/index.html",
     "title": "Your ‘pretty’ Excel Workbook is holding you back",
     "section": "",
-    "text": "Many issues happen before your data gets into R; they starts with your data. Sorry if you are expecting an R post, but this will be purely a data rant.\nIf your data looks like this, please pay close attention.\nI’ve met people who genuinely think data sheets like this look good, and I’ve received enough datasheets from others that look like this that they must think this is a decent way to store their data.\nI saw this a lot in academic research and, unfortunately, I still see this today in the professional world.\nSo what exactly are the problems with this dataset?\nThe data in the image is fake, but the issues are all things I have seen in real datasets. They range from genuine problems to just really odd things to do to your data in an academic, research, or professional setting."
+    "text": "Many issues happen before your data gets into R; they start with your data. Sorry if you were expecting an R post, but this will be purely a data rant.\nIf your data looks like this, please pay close attention.\nI’ve met people who genuinely think data sheets like this look good, and I’ve received enough datasheets from others that look like this that they must think this is a decent way to store their data.\nI saw this a lot in academic research and, unfortunately, I still see this today in the professional world.\nSo what exactly are the problems with this dataset?\nThe data in the image is fake, but the issues are all things I have seen in real datasets. They range from genuine problems to just really odd things to do to your data in an academic, research, or professional setting."
   },
   {
     "objectID": "posts/2026-10-03_excel_storage/index.html#non-tidy-data",
     "href": "posts/2026-10-03_excel_storage/index.html#non-tidy-data",
     "title": "Your ‘pretty’ Excel Workbook is holding you back",
     "section": "Non-Tidy Data",
-    "text": "Non-Tidy Data\nThis is probably the most common issue, and it makes several other issues to easier to introduce.\nI’m not going to go into what tidy data looks like because others have already done that for me. Here is the walkthrough from the pros: Tidy data\nThere are several other names for tidy data (e.g., long), but they all mean a similar thing: each observation or sample gets its own row. How you define a sample may differ depending on the study design, but it will generally be a similar structure, or a simple pivot away.\nThere are exceptions such as multivariate analysis, but tidy data usually makes reading in, cleaning, and analyzing your data easier.\nSo in the example, we have non-tidy, wide data where there are multiple samples per row because there are distinct weeks as columns. These should be pivoted down into a “Week” column."
+    "text": "Non-Tidy Data\nThis is probably the most common issue, and it makes several other issues easier to introduce.\nI’m not going to go into what tidy data looks like because others have already done that for me. Here is the walkthrough from the pros: Tidy data\nThere are several other names for tidy data (e.g., long), but they all mean a similar thing: each observation or sample gets its own row. How you define a sample may differ depending on the study design, but it will generally be a similar structure, or a simple pivot away.\nThere are exceptions such as multivariate analysis, but tidy data usually makes reading in, cleaning, and analyzing your data easier.\nSo in the example, we have non-tidy, wide data where there are multiple samples per row because there are distinct weeks as columns. These should be pivoted down into a “Week” column."
   },
   {
     "objectID": "posts/2026-10-03_excel_storage/index.html#merged-cells",
     "href": "posts/2026-10-03_excel_storage/index.html#merged-cells",
     "title": "Your ‘pretty’ Excel Workbook is holding you back",
     "section": "Merged Cells",
-    "text": "Merged Cells\nMerged cells cause issues when you read the table into any software to perform the actual analysis.\nMerged cells could be merged headers across columns, which are often a symptom of non-tidy data, or merged rows, which typically is used to show rows belong to the same group.\n\nThe fix is to make your data tidy and fill your rows in so each record can stand alone."
+    "text": "Merged Cells\nMerged cells cause issues when you read the table into any software to perform the actual analysis.\nMerged cells could be merged headers across columns, which are often a symptom of non-tidy data, or merged rows, which are typically used to show rows belong to the same group.\n\nThe fix is to make your data tidy and fill your rows in so each record can stand alone."
   },
   {
     "objectID": "posts/2026-10-03_excel_storage/index.html#multiple-tables-on-a-single-sheet",
@@ -487,7 +487,7 @@
     "href": "posts/2026-10-03_excel_storage/index.html#missing-or-excess-information",
     "title": "Your ‘pretty’ Excel Workbook is holding you back",
     "section": "Missing or Excess Information",
-    "text": "Missing or Excess Information\nAll data needs to be in a column. Each column should also include a variable name to give it some context. Having floating values out to the right is not helpful because no one knows what they mean.\nHaving floating information in headers or footers that are important or adds details to records should be added as columns in the dataset if that information is crucial. If you need to make flag or comment columns to hold that information, do it. Footnotes with symbols in cells will also change any numeric data to character, which then would have to be cleaned and turned back into a number. Therefore, that asterisk or other mark is going to be removed from that cell anyway."
+    "text": "Missing or Excess Information\nAll data needs to be in a column. Each column should also include a variable name to give it some context. Having floating values out to the right is not helpful because no one knows what they mean.\nHaving floating information in headers or footers that is important or adds details to records should be added as columns in the dataset if that information is crucial. If you need to make flag or comment columns to hold that information, do it. Footnotes with symbols in cells will also change any numeric data to character, which then would have to be cleaned and turned back into a number. Therefore, that asterisk or other mark is going to be removed from that cell anyway."
   },
   {
     "objectID": "resources/data_storage_formats.html#other-separated-text-files",

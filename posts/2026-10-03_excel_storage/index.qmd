@@ -8,7 +8,7 @@ categories: [Data, Data Management]
 image-alt: "An image of an Excel sheet that has what some people think is pretty data"
 ---
 
-Many issues happen before your data gets into R; they starts with your data. Sorry if you are expecting an R post, but this will be purely a data rant.
+Many issues happen before your data gets into R; they start with your data. Sorry if you were expecting an R post, but this will be purely a data rant.
 
 If your data looks like this, please pay close attention.
 
@@ -26,7 +26,7 @@ The data in the image is fake, but the issues are all things I have seen in real
 
 ## Non-Tidy Data
 
-This is probably the most common issue, and it makes several other issues to easier to introduce. 
+This is probably the most common issue, and it makes several other issues easier to introduce. 
 
 I'm not going to go into what tidy data looks like because others have already done that for me. Here is the walkthrough from the pros: [Tidy data](https://tidyr.tidyverse.org/articles/tidy-data.html)
 
@@ -42,7 +42,7 @@ So in the example, we have non-tidy, wide data where there are multiple samples 
 
 Merged cells cause issues when you read the table into any software to perform the actual analysis. 
 
-Merged cells could be merged headers across columns, which are often a symptom of non-tidy data, or merged rows, which typically is used to show rows belong to the same group. 
+Merged cells could be merged headers across columns, which are often a symptom of non-tidy data, or merged rows, which are typically used to show rows belong to the same group. 
 
 ![](./resources/merged_rows.png){fig-alt="Excel cells merged across rows to show rows are grouped"}
 
@@ -66,7 +66,7 @@ As noted above, if you keep these in when you read your data into R, you have to
 
 All data needs to be in a column. Each column should also include a variable name to give it some context. Having floating values out to the right is not helpful because no one knows what they mean.
 
-Having floating information in headers or footers that are important or adds details to records should be added as columns in the dataset if that information is crucial. If you need to make flag or comment columns to hold that information, do it. Footnotes with symbols in cells will also change any numeric data to character, which then would have to be cleaned and turned back into a number. Therefore, that asterisk or other mark is going to be removed from that cell anyway.
+Having floating information in headers or footers that is important or adds details to records should be added as columns in the dataset if that information is crucial. If you need to make flag or comment columns to hold that information, do it. Footnotes with symbols in cells will also change any numeric data to character, which then would have to be cleaned and turned back into a number. Therefore, that asterisk or other mark is going to be removed from that cell anyway.
 
 ## Lack of Structural Hierarchy
 
@@ -111,7 +111,7 @@ There are some common formatting choices that should be avoided.
 - Multiple sentinel values. For those who are not aware, sentinel values are those that represent some signal. Usually, this refers to NA or missing values. You should be consistent in using a single value in your dataset whether that is empty cells, NA, N/A, etc.  
 - Cell or text formatting. No highlight or fill, text color, bold/italics, strike-through, etc. Is the presence of this formatting meaningful or not? Is that one cell with yellow highlighting important? Who knows? Maybe you do, if it is your data, but how about in a year? If it is important, add a dedicated column and a comment or flag.  
 - Multi-line headers. The headers in the example above are not just wrapped but contain new-line characters. When read into software, those new-line characters are retained.  
-- Dates in Excel. You cannot avoid putting dates in Excel, but I think, at this point, everyone has had issues with dates in Excel. Those issues persist when you read them into R. My recommendation is to make sure the cell format in Excel is set to "Text". This way, it can be read as text and converted in R to an actual date. If you already have your dates in Excel and try to convert to them to Text, it will mess them all up. Copy the column to something like Notepad, change the format to Text in Excel, then paste the values back.
+- Dates in Excel. You cannot avoid putting dates in Excel, but I think, at this point, everyone has had issues with dates in Excel. Those issues persist when you read them into R. My recommendation is to make sure the cell format in Excel is set to "Text". This way, it can be read as text and converted in R to an actual date. If you already have your dates in Excel and try to convert them to Text, it will mess them all up. Copy the column to something like Notepad, change the format to Text in Excel, then paste the values back.
 
 
 
@@ -120,7 +120,7 @@ There are some common formatting choices that should be avoided.
 This is just a list of the absolute off-the-wall things I've seen in Excel sheets.
 
 - Images of tables rather than the actual data.  
-- Values with strike-through formatting. What does that mean? Is the data wrong, Should the value/row be excluded? Honestly insane.  
+- Values with strike-through formatting. What does that mean? Is the data wrong? Should the value/row be excluded? Honestly insane.  
 - Comic Sans. Maybe it is my millennial side showing, but we had it drilled into us that it is the most unprofessional font in existence. 
  
 
