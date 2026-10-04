@@ -1,6 +1,10 @@
 ::: {.now-board}
 
 ::: {.now-entry}
+[2026-10-04]{.now-date} [Your 'pretty' Excel Workbook is holding you back](posts/2026-10-03_excel_storage/index.qmd) - It might look good, but it really isn't.
+:::
+
+::: {.now-entry}
 [2026-09-11]{.now-date} [Letters to Senators](posts/2026-09-10_letters_to_senators/index.qmd) - Using parameterized Quarto to write letters to all 100 senators.
 :::
 
@@ -8,8 +12,5 @@
 [2026-08-27]{.now-date} [2026 #30DayChartChallenge Retrospective](posts/2026-08-27_30-day-chart-challenge-retrospective/index.qmd) - Looking back on my contributions to the challenge.
 :::
 
-::: {.now-entry}
-[2024-07-20]{.now-date} [Tidy Tuesday post](posts/2024-07-20_tidy_tuesday-2022-w33/index.qmd) (2020, Week 33)
-:::
 
 :::

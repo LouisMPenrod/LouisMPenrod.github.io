@@ -17,7 +17,7 @@ toc: false
 
 What do fish spines, biofouling, aquaculture, agriculture, and pharmaceuticals have in common? Nothing except that I have used R to build tools or analyze data to create something useful around these subjects. Give me a dataset worth analyzing or a process that needs streamlining, and I am there!
 
-Want to learn more about my past? Check out my [bio](bio.qmd). Curious what I'm working on right now? See my [projects](projects.qmd) and [posts](posts.qmd) — or follow along on social media *(links coming soon)*.
+Want to learn more about my past? Check out my [bio](bio.qmd). Curious what I'm working on right now? See my [projects](projects.qmd) and [posts](posts.qmd), or follow along on [Instagram](https://www.instagram.com/penrod.programming/) and [YouTube](https://www.youtube.com/@Penrod.Programming).
 
 ## Recent Updates
 
